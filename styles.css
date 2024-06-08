@@ -1,0 +1,751 @@
+body{
+    background-color:#F5F5DC;
+}
+@font-face {
+    font-family: 'NiceHoney';
+    src: url('fonts/NiceHoney/Nice\ Honey.ttf') format('truetype'); /* Substitua pelo caminho correto para a fonte e o formato correspondente */
+    /* Outros estilos opcionais, como font-weight e font-style, podem ser adicionados aqui */
+}
+@font-face {
+    font-family: 'celtica';
+    src: url('fonts/celtica/Celtica-Book.ttf') format('truetype'); /* Substitua pelo caminho correto para a fonte e o formato correspondente */
+    /* Outros estilos opcionais, como font-weight e font-style, podem ser adicionados aqui */
+}
+    a{
+        text-decoration: none;
+    }
+    .center{
+        text-align: center;
+    }
+  .menu {
+             z-index: 2; 
+            text-align:center;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 100%;
+            height: 60px;
+           
+            
+        }
+
+        .menu a {
+             z-index: 100; 
+            margin-left:500px;
+            text-decoration: none;
+            color: black;
+            font-size: 20px;
+            margin: 0 15px;
+        }
+
+@keyframes blink-caret {
+    from, to {
+        border-color: transparent;
+    }
+    50% {
+        border-color: #333;
+    }
+}
+
+
+@media (max-width:455px) {
+    body{
+        text-align: center;
+    }
+.typing-effect{
+    margin-top: 5%;
+}
+    .card{
+        margin-left: 5%;
+        margin-top: 5rem;
+        border-radius: 20px;
+        width: 90%;
+        height: 90%;
+    }
+  
+    .imagem-oval {
+        margin-top: -25%;
+        margin-left: 65%;
+        width: 325px; 
+        height: 400px;
+        border-radius: 45%; 
+        position: relative;
+    }
+    .icon{
+      display: none;
+    }
+ 
+    
+    @keyframes flutuar {
+        0%, 100% {
+            transform: translateY(0);
+        }
+        50% {
+            transform: translateY(-20px);
+        }
+    }
+    .typing-effect {
+        width: 100%;
+        margin-top: -11%;
+        font-family: 'celtica';
+        font-size: 30px;
+        font-weight: bold;
+        white-space: nowrap;
+        overflow: hidden;
+        border-right: 2px solid #333;
+        animation: typing 2s steps(25, end), blink-caret 0.75s step-end infinite;
+    }
+    .pincelada{
+        margin-top: -40%;
+        z-index: 1;
+    }
+
+    .subtitulo{
+        font-size: 300%;
+    }
+    
+    .pai{
+        margin-left: 2%;
+        position: relative;
+    }
+    .Imagem-flutuante{
+       display: none;
+    }
+    .about {
+        margin-left: auto;
+        margin-right: auto;
+        max-width: 90%; 
+        text-align: justify;
+        position: relative;
+        margin-top: -20%;
+        transform: translateY(-50%);
+    }
+    
+    .sinopse{
+        height: 200px;
+        text-align: center;
+        text-align: justify;
+        font-size: 140%;
+        margin-top: 13%; 
+        margin-left: 10%;
+        margin-right: 10%;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        
+    }
+ 
+    .capas{
+        margin-top: 20%;
+        width:259px;
+        height:400px;
+        
+    }
+  
+    .button-plus{
+        font-weight: bold;
+        margin-top: 10px;
+        background: none;
+        border: none;
+        margin-top: 2%;
+        outline: none;
+        font-size: 20px;
+    }
+
+    .titulo {
+        position: absolute;
+        z-index: 3;
+        margin-top: 10%;
+        margin-left: 2%;
+        font-size: 455%;
+        font-family: 'NiceHoney', sans-serif;
+    } 
+.footer{
+    margin-top: -35%;
+}
+    .back{
+        margin-top: 20%;
+        height: 800px;
+        border-radius: 20px;
+        margin-left: 5%;
+        margin-right: 5%;
+        background-color:cadetblue;
+    }
+   
+    
+    .back-green{
+        margin-top: 20%;
+        height: 800px;
+        border-radius: 20px;
+        margin-left: 5%;
+        margin-right: 5%;
+        background-color:darkcyan;
+      
+    }
+    .back-yellow{
+        margin-top: 20%;
+        height: 800px;
+        border-radius: 20px;
+        margin-left: 5%;
+        margin-right: 5%;
+        background-color:goldenrod;
+       
+    }
+    .back-blue{
+        margin-top: 20%;
+        height: 800px;
+        border-radius: 20px;
+        margin-left: 5%;
+        margin-right: 5%;
+        background-color:#084d6e;
+      
+    }
+
+}
+
+@media  ( min-width:455px) and (max-width: 626px) {
+    .Imagem-flutuante{
+        display: none;
+     }
+    .titulo {
+        z-index: 2;
+        text-align: center;
+        position: relative;
+        margin-top: 20%;
+        transform: translateY(-50%);
+        font-size: 500%;
+        font-family: 'NiceHoney', sans-serif;
+    }
+    
+    .pincelada{
+        margin-left: auto;
+        margin-right: auto;
+        text-align: justify;
+        position: relative;
+        transform: translateY(-50%);
+        margin-top: -10%;
+        z-index: 1;
+        width: 90%;
+    }
+    .about{
+        margin-left: 5%;
+        margin-right: 5%;
+        margin-top: -125%;
+        text-align: justify;
+       
+    }
+}
+@media  ( min-width:626px) and (max-width: 704px) {
+    .card{
+        margin-top: 5rem;
+        border-radius: 20px;
+        width: 20rem;
+        height: 20rem;
+    }
+   
+    .imagem-oval {
+        margin-top: -25%;
+        margin-left: 65%;
+        width: 325px; 
+        height: 400px; 
+        border-radius: 45%; 
+        position: relative;
+    }
+    .icon{
+        display: left;
+        margin-left: 20%;
+    }
+    .Imagem-flutuante{
+        display: none;    }
+    
+    @keyframes flutuar {
+        0%, 100% {
+            transform: translateY(0);
+        }
+        50% {
+            transform: translateY(-20px);
+        }
+    }
+    .typing-effect {
+        margin-top: -11%;
+        font-family: 'celtica';
+        font-size: 30px;
+        font-weight: bold;
+        white-space: nowrap;
+        overflow: hidden;
+        border-right: 2px solid #333;
+        animation: typing 2s steps(25, end), blink-caret 0.75s step-end infinite;
+    }
+
+    .pincelada{
+        margin-left: auto;
+        margin-right: auto;
+        text-align: justify;
+        position: relative;
+        transform: translateY(-50%);
+        margin-top: -10%;
+        z-index: 1;
+        width: 90%;
+    }
+
+    .pai{
+        position: relative;
+    }
+    .titulo {
+        z-index: 2;
+        text-align: center;
+        position: relative;
+        margin-top: 15%;
+        transform: translateY(-50%);
+        font-size: 700%;
+        font-family: 'NiceHoney', sans-serif;
+    }
+    
+    .subtitulo{
+        font-size: 300%;
+    }
+    
+    .about{
+        margin-left: 5%;
+        margin-right: 5%;
+        margin-top: -135%;
+        text-align: justify;
+       
+    }
+    .sinopse{
+        text-align: justify;
+        font-size: 140%;
+        margin-top: 13%; 
+        margin-left: 10%;
+        margin-right: 10%;
+    }
+    .capas{
+        margin-left:29%;
+        margin-top: 5%;
+    }
+    }
+        
+    .back{
+        border-radius: 20px;
+        margin-left: 5%;
+        margin-right: 5%;
+        background-color:cadetblue;
+      
+    }
+    .back-green{
+        border-radius: 20px;
+        margin-left: 5%;
+        margin-right: 5%;
+        background-color:darkcyan;
+    }
+    .back-yellow{
+        border-radius: 20px;
+        margin-left: 5%;
+        margin-right: 5%;
+        background-color:goldenrod;
+    }
+    .back-blue{
+        border-radius: 20px;
+        margin-left: 5%;
+        margin-right: 5%;
+        background-color:#084d6e;
+    }
+
+@media (min-width:705px) and (max-width: 967px) {
+    .about{
+        padding-left: 5%;
+        padding-right: 5%;
+        margin-top: -70%;
+        text-align: justify;
+       
+    }
+    .titulo {
+        position: absolute;
+        z-index: 3;
+        margin-left: 5%;
+        margin-top: 15%;
+        font-size: 700%;
+        font-family: 'NiceHoney', sans-serif;
+     }
+    .sinopse{
+        text-align: justify;
+        font-size: 140%;
+        margin-top: -62%; 
+        margin-left: 0%;
+        margin-right: 10%;
+    }
+    .capas{
+        margin-left: 80%;
+        margin-top: 5%;
+    }
+    
+    .back{
+        margin-left: 10%;
+        margin-right: 10%;
+        background-color:cadetblue;
+    }
+    .back-green{
+        margin-left: 10%;
+        margin-right: 10%;
+        background-color:darkcyan;
+    }
+    .back-yellow{
+        margin-left: 10%;
+        margin-right: 10%;
+        background-color:goldenrod;
+    }
+    .back-blue{
+        margin-left: 10%;
+        margin-right: 10%;
+        background-color:#084d6e;
+    }
+    .Imagem-flutuante{
+       display: none;    
+    }
+    .footer{
+        margin-top: -15%;
+    }
+    }
+    @media (max-width: 967px) and (min-width:704px) {
+        .about {
+            margin-left: auto;
+            margin-right: auto;
+            max-width: 90%; 
+            text-align: justify;
+            position: relative;
+            margin-top: -40%;
+            transform: translateY(-50%);
+        }
+        
+        .button-plus{
+            display: none;
+        }
+    
+        .capas{
+            margin-left: 10%;
+            margin-top: 5%;
+            width:309px;
+            height:500px;
+            
+        }
+        .card{
+            margin-top: 5rem;
+            border-radius: 20px;
+            width: 25rem;
+            height: 30rem;
+        }
+       
+        .imagem-oval {
+            margin-top: -25%;
+            margin-left: 65%;
+            width: 325px;
+            height: 400px;
+            border-radius: 45%; 
+            position: relative;
+        }
+        .icon{
+            display: left;
+            margin-left: 20%;
+        }
+        .Imagem-flutuante{
+            margin-left: -80%;
+            display: left;
+            width: 15%;
+            position: relative;
+            animation: flutuar 3s ease-in-out infinite;
+        }
+        .pincelada{
+            margin: auto;
+            width: 80%;
+            margin-top: -40%;
+            z-index: 1;
+            
+        }
+        .titulo {
+            position: absolute;
+            z-index: 3;
+            margin-top: 0%;
+            font-size: 700%;
+            width: 90%;
+            font-family: 'NiceHoney', sans-serif;
+         }
+    }
+    @media (min-width: 967px) and (max-width:1250px) {
+        .about {
+           
+            margin-top: -35%;
+           
+        }
+        
+        .button-plus{
+            display: none;
+        }
+    
+        .capas{
+            margin-left: 10%;
+            margin-top: 5%;
+            width:309px;
+            height:500px;
+            
+        }
+        .card{
+            margin-top: 5rem;
+            border-radius: 20px;
+            width: 25rem;
+            height: 30rem;
+        }
+       
+        .imagem-oval {
+            margin-top: -25%;
+            margin-left: 65%;
+            width: 325px;
+            height: 400px;
+            border-radius: 45%; 
+            position: relative;
+        }
+        .icon{
+            display: left;
+            margin-left: 20%;
+        }
+        .Imagem-flutuante{
+            margin-left: -80%;
+            display: left;
+            width: 15%;
+            position: relative;
+            animation: flutuar 3s ease-in-out infinite;
+        }
+        .pincelada{
+            margin: auto;
+            width: 80%;
+            margin-top: -55%;
+            z-index: 1;
+            
+        }
+    
+        
+        @keyframes flutuar {
+            0%, 100% {
+                transform: translateY(0);
+            }
+            50% {
+                transform: translateY(-20px);
+            }
+        }
+        .typing-effect {
+            margin-top: -14%;
+            text-align: center;
+            font-family: 'celtica';
+            font-size: 30px;
+            font-weight: bold;
+            white-space: nowrap;
+            overflow: hidden;
+            border-right: 2px solid #333;
+            animation: typing 2s steps(25, end), blink-caret 0.75s step-end infinite;
+        }
+     
+        .pai{
+            margin-left: 25%;
+            position: relative;
+        }
+        .titulo {
+            position: absolute;
+            z-index: 3;
+            margin-top: -15%;
+            font-size: 700%;
+            width: 90%;
+            font-family: 'NiceHoney', sans-serif;
+         }
+        
+        .subtitulo{
+            font-size: 300%;
+        }
+        
+          .about{
+        padding-left: 5%;
+        padding-right: 5%;
+        text-align: justify;
+       width: 95%;
+    }
+        .sinopse{
+            text-align: justify;
+            font-size: 140%;
+            margin-top: -32%; 
+            margin-left: 40%;
+            margin-right: 10%;
+        }
+        
+        .back{
+            margin-top: 5%;
+            margin-left: 10%;
+            margin-right: 10%;
+            height: 600px;
+            width: 80%;
+            background-color:cadetblue;
+        }
+        .back-green{
+            margin-top: 5%;
+            margin-left: 10%;
+            margin-right: 10%;
+            height: 600px;
+            width: 80%;
+            background-color:darkcyan;
+        }
+        .back-yellow{
+            margin-top: 5%;
+            margin-left: 10%;
+            margin-right: 10%;
+            height: 600px;
+            width: 80%;
+            background-color:goldenrod;
+        }
+        .back-blue{
+            margin-top: 5%;
+            margin-left: 10%;
+            margin-right: 10%;
+            height: 600px;
+            width: 80%;
+            background-color:#084d6e;
+        }
+    
+    }
+
+    @media (min-width: 1251px) {
+ .back .capas{
+           
+            margin-left: 5%;
+            margin-top: 10%;
+            width:309px;
+            height:500px;
+            
+        }
+        .button-plus{
+            display: none;
+        }
+    
+        .capas{
+            margin-left: 5%;
+            margin-top: -5%;
+            width:309px;
+            height:500px;
+            
+        }
+        .card{
+            margin-top: 5rem;
+            border-radius: 20px;
+            width: 25rem;
+            height: 30rem;
+        }
+       
+        .imagem-oval {
+            margin-top: -25%;
+            margin-left: 65%;
+            width: 325px;
+            height: 400px;
+            border-radius: 45%; 
+            position: relative;
+        }
+        .icon{
+            display: left;
+            margin-left: 20%;
+        }
+        .Imagem-flutuante{
+            margin-left: -80%;
+            display: left;
+            width: 15%;
+            position: relative;
+            animation: flutuar 3s ease-in-out infinite;
+        }
+        .pincelada{
+            margin: auto;
+            width: 80%;
+            z-index: 1;
+            margin-top: -58%;
+            
+        }
+    
+        
+        @keyframes flutuar {
+            0%, 100% {
+                transform: translateY(0);
+            }
+            50% {
+                transform: translateY(-20px);
+            }
+        }
+        .typing-effect {
+            margin-top: -14%;
+            text-align: center;
+            font-family: 'celtica';
+            font-size: 30px;
+            font-weight: bold;
+            white-space: nowrap;
+            overflow: hidden;
+            border-right: 2px solid #333;
+            animation: typing 2s steps(25, end), blink-caret 0.75s step-end infinite;
+        }
+     
+        .pai{
+            margin-left: 25%;
+            position: relative;
+        }
+        .titulo {
+            position: absolute;
+            z-index: 3;
+            margin-top: -15%;
+            font-size: 800%;
+      
+            font-family: 'NiceHoney', sans-serif;
+         }
+        
+        .subtitulo{
+            font-size: 300%;
+        }
+        
+        .about{
+            margin-top: -45%;
+            text-align: justify;
+            margin-right: 26%;  
+             margin-left: 26%;
+        }
+        .sinopse{
+            text-align: justify;
+            font-size: 140%;
+            margin-top: -42%; 
+            margin-left: 40%;
+            margin-right: 10%;
+        }
+        
+        .back{
+            margin-top: 5%;
+            margin-left: 10%;
+            margin-right: 10%;
+            height: 600px;
+            width: 80%;
+            background-color:cadetblue;
+        }
+        .back-green{
+            margin-top: 5%;
+            margin-left: 10%;
+            margin-right: 10%;
+            height: 600px;
+            width: 80%;
+            background-color:darkcyan;
+        }
+        .back-yellow{
+            margin-top: 5%;
+            margin-left: 10%;
+            margin-right: 10%;
+            height: 600px;
+            width: 80%;
+            background-color:goldenrod;
+        }
+        .back-blue{
+            margin-top: 5%;
+            margin-left: 10%;
+            margin-right: 10%;
+            height: 600px;
+            width: 80%;
+            background-color:#084d6e;
+        }
+    
+    }
+        
