@@ -1,0 +1,30 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="{% static 'css/estilops.css' %}">
+    <link href="{% static 'css/output.css' %}" rel="stylesheet">
+
+</head>
+<body>
+<nav class="bg-darkblue p-2 flex items-center">
+
+    <a href="{% url 'index' %}" class="mr-4">
+        <img class="w-8" src="{% static 'media/pen.png' %}" alt="pen">
+    </a>
+    
+    <ul class="flex text-lg text-white font-serif ml-auto">
+        <li class="mr-6"><a href="{% url 'index' %}">Sobre</a></li>
+        <li class="mr-6"><a href="{% url 'portifolio' id=1 %}">Portifólio</a></li>
+        <li><a href="{% url 'production' %}">Produções Literárias</a></li>
+    </ul>
+</nav>
+<div class="w-full">
+    {% block content %} {% endblock content %}
+ 
+</div>
+</body>
+</html>

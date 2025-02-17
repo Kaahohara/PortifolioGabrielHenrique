@@ -1,0 +1,92 @@
+{% extends "components/menu.html" %} 
+{% load static %} 
+{% include 'components/menu.html' %} 
+{% block content %}
+
+<div class="bg-darkblue p-12">
+  <div class="z-10 bg-white m-auto mt-0 shadow-2xl w-11/12">
+    <div class="flex justify-center ">
+      <div class="carousel">
+      <div class="carousel-item small">
+        <img src="{% static 'media/InimigoSemFace.png' %}" alt="Imagem 1" />
+      </div>
+      <div class="carousel-item large">
+        <img src="{% static 'media/ATormentaCapa.png' %}" alt="Imagem 2" />
+      </div>
+      <div class="carousel-item small">
+        <img src="{% static 'media/revista_meio.png' %}" alt="Imagem 3" />
+      </div>
+    </div>
+  </div>
+
+
+    <div class="bg-lightblue m-auto -mt-20 w-11/12 justify-center h-auto p-4 rounded-xl">
+      <p class="w-11/12  text-justify pt-24 m-auto">
+        A Tormenta dos Amaldiçoados: "Essa é a história de um garoto atormentado pelo passado e de uma família que se une em meio às trevas existentes no mundo moderno. Marcel se sente um mau sortudo, vivendo afastado das pessoas a sua volta por medo de causar mortes. Tudo muda quando Anellya e os gêmeos, Angus e Malcom Glauco, decidem o ajudar. Juntos, acabam entrando em conflito com forças maiores. Enquanto isso, Thiago Glauco, um investigador encontra uma brutal cena do crime, onde resta apenas carcaças de corpos ressecados. Em uma luta contra o tempo para descobrir o culpado, se vê envolvido em uma conspiração. Do outro lado da cidade, a jovem Margareth Glauco é abordada por dois homens estranhos que estão atrás de seu pai, desaparecido a tempos. Em uma fuga é salva por uma garotinha e confinada por um culto sombrio onde precisa lutar por sua vida. As cordas que movem a realidade estão  entrelaçadas e os levará a desfechos frenéticos, em um caminho de sofrimento, perdas, encontros e desencontros; mas também de amizade, amor e união."
+      </p>
+    </div>
+
+    <div class="mt-12 relative">
+      <div
+        class="grid mt-36 m-auto text-white grid-cols-3 min-h-48 ml-4 mr-4 lg:ml-16 lg:mr-16 md:ml-4 md:mr-4 gap-4 lg:gap-6 -mt-42"
+      >
+        <div class="bg-darkblue drop-shadow-6xl p-14 relative z-10">
+          <div
+            class="rounded-full -mt-32 m-auto bg-lightblue h-64 w-68 sm:h-28 sm:w-28"
+          ></div>
+          <p class="text-xl">
+            O sequestro e desaparecimento de bebês e crianças durante a ditadura
+            militar no Brasil, é um tema pouco discutido, muito menos abordado
+            na grande.
+          </p>
+        </div>
+
+        <div class="bg-darkblue drop-shadow-6xl p-14 relative z-10">
+          <div
+            class="rounded-full -mt-32 m-auto bg-lightblue h-64 w-68 sm:h-28 sm:w-28"
+          ></div>
+          <p class="text-xl">
+            O sequestro e desaparecimento de bebês e crianças durante a ditadura
+            militar no Brasil, é um tema pouco discutido, muito menos abordado
+            na grande.
+          </p>
+        </div>
+        <div class="bg-darkblue drop-shadow-6xl p-14 relative z-10">
+          <div
+            class="rounded-full -mt-32 m-auto bg-lightblue h-64 w-68 sm:h-28 sm:w-28"
+          ></div>
+          <p class="text-xl">
+            O sequestro e desaparecimento de bebês e crianças durante a ditadura
+            militar no Brasil, é um tema pouco discutido, muito menos abordado
+            na grande.
+          </p>
+        </div>
+      </div>
+
+      <div
+        class="bg-lightblue w-full h-36 transform -translate-y-1/2 top-full z-0"
+      ></div>
+      <div
+        class="bg-lightblue transform -translate-y-1/2 flex p-24 pt-30 pb-30 justify-center relative z-10"
+      >
+        <p class="w-1/2 text-white text-center text-2xl">
+          O sequestro e desaparecimento de bebês e crianças durante a ditadura
+          militar no Brasil, é um tema pouco discutido, muito menos abordado na
+          grande.
+        </p>
+      </div>
+      <div class="grid grid-cols-3 bg-lightblue ">
+        <div>
+          <img  class="max-h-[500px]" src="{% static 'media/InimigoSemFace.png' %}"  width="100%"  />
+        </div>
+        <div>
+          <img class="max-h-[500px]" src="{% static 'media/InimigoSemFace.png' %}"  width="100%" />
+        </div>
+        <div>
+          <img  class="max-h-[500px]" src="{% static 'media/revista_meio.png' %}"  width="100%"  />
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+{% endblock content %}

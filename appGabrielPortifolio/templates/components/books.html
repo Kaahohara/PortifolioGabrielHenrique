@@ -1,0 +1,38 @@
+    {% extends "components/menu.html" %}
+    {% load static %}
+    {% include 'components/menu.html' %}
+    {% block content %}
+    <!-- <link rel="stylesheet" href="{% static 'css/styles.css' %}"> -->
+   
+<div class="w-full">
+    {% block contentbook %} {% endblock contentbook %}
+</div>
+
+<div class="bg-darkblue p-8">
+    <p class=" text-white text-2xl">Veja +</p>
+    <div  class="grid grid-cols-6 gap-4 p-2">
+        
+        <div>
+            <img  src="{% static 'media/ATormentaCapa.png' %}" class="" >
+            </div>
+            <div >
+                <img  src="{% static 'media/InimigoSemFace.png' %}" >
+            </div>
+            <div >
+                <img  src="{% static 'media/ImagemTormenta.png' %}" >
+            </div>
+            <div>
+                <img  src="{% static 'media/ATormentaCapa.png' %}" >
+            
+            </div>
+                <div >
+                    <img  src="{% static 'media/InimigoSemFace.png' %}">
+                 
+                </div>
+                <div class="justify-center" >
+                    <img  src="{% static 'media/ImagemTormenta.png' %}" >
+                  
+                </div>
+    </div>
+</div>
+{% endblock content %}

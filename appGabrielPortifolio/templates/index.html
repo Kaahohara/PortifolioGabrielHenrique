@@ -1,0 +1,108 @@
+{% extends "components/menu.html" %}
+{% load static %}    
+{% include 'components/menu.html' %}
+{% block content %}
+<link rel="stylesheet" href="{% static 'css/styles.css' %}">
+<div class="bg-darkblue">
+    <div class="bg-primary  pt-24 pb-36">        
+        <div class="w-full gap-4 flex justify-center">
+            <div class="shadow-2xl p-14 rounded-br-full m-auto rounded-tr-full lg:w-5/6  justify-start ">
+                <p class="text-4xl pr-14">Eu sou <b>Gabriel Henrique</b><br>
+                estudante de <b>Jornalismo</b> e <b>Copy Writter</b></p>
+                <p class="text-2xl text-justify pr-14">Busco oportunidades de emprego ou estágio na área de comunicação, onde eu possa utilizar minhas habilidades de edição e produção de texto, criatividade e conhecimentos para contribuir com a elaboração e criação de conteúdos multimídia.</p>
+                <div class="flex mt-8 text-2xl">
+                    <button class="bg-buttonblue p-2 shadow-2xl rounded text-white">Saiba Mais</button>
+                    <button class="bg-buttonblue p-2 shadow-2xl ml-4 rounded text-white">Portifólio</button>
+                    
+                    <a>
+                        <img class="ml-4 size-9" src="{% static 'media/linkedin.png' %}" alt="linkedin"> 
+                    </a>
+
+                    <a>
+                        <img class="ml-4 size-9" src="{% static 'media/instagram.png' %}" alt="Instagram"> 
+                    </a>
+                </div>
+            </div>
+            <div class="lg:w-1/2 hidden rounded-full  lg:flex pr-14 justify-end">
+                <img src="{% static 'media/fotoPerfil.png' %}" class="h-96  rounded-full w-auto" alt="perfil">
+            </div>
+        </div>
+    </div>
+
+
+    <div class="grid lg:grid-cols-3  md:grid-cols-3 min-h-48 ml-4 mr-4 lg:ml-16 lg:mr-16 md:ml-4 md:mr-4 gap-4 lg:gap-6 -mt-14 sm:grid-cols-1  ">
+        <div class="bg-lightblue shadow-2xl  p-4 rounded-xl">
+            <p class="text-3xl">Soft Skills</p>
+            <div class="pl-4">
+                <p class="text-xl">Boa conversação</p>
+                <p class="text-xl">Pensamento crítico</p>
+                <p class="text-xl">Criatividade</p>
+            </div>
+        </div>
+        <div class="bg-lightblue shadow-2xl p-4 rounded-xl">
+            <p class="text-3xl">Hard Skills</p>
+            <div class="pl-4">
+                <p class="text-xl">Produção audiovisual</p>
+                <p class="text-xl">SEO</p>
+                <p class="text-xl">Copywriter</p>
+            </div>
+        </div>
+        <div class="bg-lightblue shadow-2xl p-4 rounded-xl">
+            <div class="pl-4">
+                <p class="text-3xl">Educação</p>
+                <p class="text-xl">Produção audiovisual</p>
+                <p class="text-xl">SEO</p>
+                <p class="text-xl">Copywriter</p>
+            </div>
+    </div>
+    </div>
+    <div class="bg-blueBackground shadow-2xl pl-4 pr-4  pb-36 pt-32 -mt-20 h-auto sm:w-full  bg-cover bg-center" >
+        <div class="bg-primary  m-auto sm:w-full lg:w-11/12  drop-shadow-6xl  opacity-75 rounded-xl p-16">
+            <div class="">
+                <p class="text-4xl">Formação</p>
+                <p class="text-2xl">Graduando em Jornalismo - Universidade Federal de Santa Maria<br>
+                    Técnico em enfermagem - CEPHAS</p>
+            </div>    
+            <div class="mt-12">
+                    <p class="text-4xl">Cursos</p>
+                    <p class="text-2xl "> Copywriting: Domine a arte da escrita persuasiva </p>
+            </div>    
+            <div class="mt-12">
+                        <p clAass="text-4xl">Experiência</p>
+                        <p class="text-2xl">Dom Média - Copywriter</p>                           
+            </div>    
+                        <p class="text-4xl mt-12">Ferramentas</p>
+                       
+            <div class="flex mt-12 pr-20 pl-20 lg:gap-8">
+                            <div class="">
+                                <img src="{% static 'media/figmaIcon.png' %}" alt="Figma">
+                            </div>
+                            <div class="">
+                                <img src="{% static 'media/CanvaIcon.png' %}" alt="Canva">
+                            </div>
+                            <div class="">
+                                <img src="{% static 'media/WordIcon.png' %}" alt="Word">
+                            </div>
+                            <div class="">
+                                <img src="{% static 'media/VegasIcon.png' %}" alt="Vegas">
+                            </div>
+                            <div class="">
+                                <img src="{% static 'media/ReaperIcon.png' %}" alt="Reaper">
+                            </div>
+                            <div class="">
+                                <img src="{% static 'media/capcutIcon.png' %}" alt="Capcut">
+                            </div>
+                            <div class="">
+                                <img src="{% static 'media/photoshopIcon.png' %}" alt="PhotoShop">
+                            </div> 
+
+                    </div>
+                    </div>
+                    <div class="mt-24 text-center text-xl text-white">Made by Karina Ohara</div>
+                </div>
+            </div>
+        </div>
+
+
+
+{% endblock content %}
