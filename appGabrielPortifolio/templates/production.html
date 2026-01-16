@@ -2,91 +2,153 @@
 {% load static %} 
 {% include 'components/menu.html' %} 
 {% block content %}
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
 
-<div class="bg-darkblue p-12">
-  <div class="z-10 bg-white m-auto mt-0 shadow-2xl w-11/12">
-    <div class="flex justify-center ">
-      <div class="carousel">
-      <div class="carousel-item small">
-        <img src="{% static 'media/InimigoSemFace.png' %}" alt="Imagem 1" />
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+<section name="banner">
+  <div class="w-full min-h-screen bg-banner z-2 h-150  bg-cover bg-center flex items-center justify-center">
+    <h1 class="text-white text-5xl font-bold drop-shadow-2xl">Produções Literárias</h1>
+  </div>
+</section>
+<div class="bg-primary w-full flex flex-col items-center justify-center">
+  <div class="w-400 bg-white flex flex-col items-center justify-center py-24">
+    <div class="swiper mySwiper min-h-320 p-24 overflow-hidden">
+      <div class="swiper-wrapper items-center">
+        <div class="swiper-slide transition-all duration-500 scale-80 opacity-50 [.swiper-slide-active]:scale-90 [.swiper-slide-active]:opacity-100 [.swiper-slide-active]:z-20" 
+            data-title="Inimigo Sem Face" 
+            data-description="Uma narrativa envolvente sobre os mistérios escondidos nas sombras da sociedade moderna.">
+            <img src="{% static 'media/InimigoSemFace.png' %}" class="rounded-3xl shadow-2xl w-full" />
+        </div>
+        
+        <div class="swiper-slide transition-all duration-500 scale-80 opacity-50 [.swiper-slide-active]:scale-90 [.swiper-slide-active]:opacity-100 [.swiper-slide-active]:z-20" 
+            data-title="A Tormenta dos Amaldiçoados" 
+            data-description="Marcel se sente um mau sortudo, vivendo afastado das pessoas por medo de causar mortes. Tudo muda quando ele encontra aliados inesperados.">
+            <img src="{% static 'media/ATormentaCapa.png' %}" class="rounded-3xl shadow-2xl w-full" />
+        </div>
+
+        <div class="swiper-slide transition-all duration-500 scale-80 opacity-50 [.swiper-slide-active]:scale-90 [.swiper-slide-active]:opacity-100 [.swiper-slide-active]:z-20" 
+            data-title="Revista Meio" 
+            data-description="Edição especial com reportagens profundas sobre cultura e produções literárias independentes.">
+            <img src="{% static 'media/revista_meio.png' %}" class="rounded-3xl shadow-2xl w-full" />
+        </div>
       </div>
-      <div class="carousel-item large">
-        <img src="{% static 'media/ATormentaCapa.png' %}" alt="Imagem 2" />
+
+      <div class="w-300" style="margin-top: -90px;">
+          <div class="bg-lightblue min-h-120 py-22 px-8 rounded-3xl shadow-2xl text-center transition-all duration-500" id="text-box">
+              <h2 class="text-3xl font-bold text-darkblue mb-4" id="carousel-title">Título do Projeto</h2>
+              <p class="text-xl text-buttonblue" id="carousel-desc">Descrição do projeto aparece aqui.</p>
+          </div>
       </div>
-      <div class="carousel-item small">
-        <img src="{% static 'media/revista_meio.png' %}" alt="Imagem 3" />
-      </div>
+
+      <div class="swiper-button-next !text-white !right-2"></div>
+      <div class="swiper-button-prev !text-white !left-2"></div>
     </div>
   </div>
-
-
-    <div class="bg-lightblue m-auto -mt-20 w-11/12 justify-center h-auto p-4 rounded-xl">
-      <p class="w-11/12  text-justify pt-24 m-auto">
-        A Tormenta dos Amaldiçoados: "Essa é a história de um garoto atormentado pelo passado e de uma família que se une em meio às trevas existentes no mundo moderno. Marcel se sente um mau sortudo, vivendo afastado das pessoas a sua volta por medo de causar mortes. Tudo muda quando Anellya e os gêmeos, Angus e Malcom Glauco, decidem o ajudar. Juntos, acabam entrando em conflito com forças maiores. Enquanto isso, Thiago Glauco, um investigador encontra uma brutal cena do crime, onde resta apenas carcaças de corpos ressecados. Em uma luta contra o tempo para descobrir o culpado, se vê envolvido em uma conspiração. Do outro lado da cidade, a jovem Margareth Glauco é abordada por dois homens estranhos que estão atrás de seu pai, desaparecido a tempos. Em uma fuga é salva por uma garotinha e confinada por um culto sombrio onde precisa lutar por sua vida. As cordas que movem a realidade estão  entrelaçadas e os levará a desfechos frenéticos, em um caminho de sofrimento, perdas, encontros e desencontros; mas também de amizade, amor e união."
-      </p>
-    </div>
-
-    <div class="mt-12 relative">
-      <div
-        class="grid mt-36 m-auto text-white grid-cols-3 min-h-48 ml-4 mr-4 lg:ml-16 lg:mr-16 md:ml-4 md:mr-4 gap-4 lg:gap-6 -mt-42"
-      >
-        <div class="bg-darkblue drop-shadow-6xl p-14 relative z-10">
-          <div
-            class="rounded-full -mt-32 m-auto bg-lightblue h-64 w-68 sm:h-28 sm:w-28"
-          ></div>
-          <p class="text-xl">
-            O sequestro e desaparecimento de bebês e crianças durante a ditadura
-            militar no Brasil, é um tema pouco discutido, muito menos abordado
-            na grande.
-          </p>
-        </div>
-
-        <div class="bg-darkblue drop-shadow-6xl p-14 relative z-10">
-          <div
-            class="rounded-full -mt-32 m-auto bg-lightblue h-64 w-68 sm:h-28 sm:w-28"
-          ></div>
-          <p class="text-xl">
-            O sequestro e desaparecimento de bebês e crianças durante a ditadura
-            militar no Brasil, é um tema pouco discutido, muito menos abordado
-            na grande.
-          </p>
-        </div>
-        <div class="bg-darkblue drop-shadow-6xl p-14 relative z-10">
-          <div
-            class="rounded-full -mt-32 m-auto bg-lightblue h-64 w-68 sm:h-28 sm:w-28"
-          ></div>
-          <p class="text-xl">
-            O sequestro e desaparecimento de bebês e crianças durante a ditadura
-            militar no Brasil, é um tema pouco discutido, muito menos abordado
-            na grande.
-          </p>
-        </div>
+  <div class="mt-12 w-400 h-full relative">
+    <div
+      class="grid w-full absolute -translate-y-1/2 z-10 m-auto text-white grid-cols-3 min-h-48 gap-4 lg:gap-6"
+    >
+      <div class="bg-darkblue h-90 drop-shadow-6xl p-14 relative z-10">
+        <div
+          class="rounded-full absolute -translate-y-1/2 top-0 left-1/2 -translate-x-1/2 bg-lightblue h-50 w-50"></div>
+          <p class="text-xl w-2/3 absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2">
+          O sequestro e desaparecimento de bebês e crianças durante a ditadura
+          militar no Brasil, é um tema pouco discutido, muito menos abordado
+          na grande.
+        </p>
       </div>
 
-      <div
-        class="bg-lightblue w-full h-36 transform -translate-y-1/2 top-full z-0"
-      ></div>
-      <div
-        class="bg-lightblue transform -translate-y-1/2 flex p-24 pt-30 pb-30 justify-center relative z-10"
+      <div class="bg-darkblue drop-shadow-6xl p-14 relative z-10">
+        <div
+          class="rounded-full absolute -translate-y-1/2 top-0 left-1/2 -translate-x-1/2 bg-lightblue h-50 w-50"></div>
+        <p class="text-xl w-2/3 absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2">
+              O sequestro e desaparecimento de bebês e crianças durante a ditadura
+          militar no Brasil, é um tema pouco discutido, muito menos abordado
+          na grande.
+        </p>
+      </div>
+      <div class="bg-darkblue drop-shadow-6xl p-14 relative z-10">
+          <div
+          class="rounded-full absolute -translate-y-1/2 top-0 left-1/2 -translate-x-1/2 bg-lightblue h-50 w-50"></div>
+          <p class="text-xl w-2/3 absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2">
+          
+          O sequestro e desaparecimento de bebês e crianças durante a ditadura
+          militar no Brasil, é um tema pouco discutido, muito menos abordado
+          na grande.
+        </p>
+      </div>
+    </div>
+      
+    <div
+        class="bg-lightblue h-150 flex flex-col items-center justify-center"
       >
-        <p class="w-1/2 text-white text-center text-2xl">
+        <p class="w-1/2 text-black text-center text-2xl">
           O sequestro e desaparecimento de bebês e crianças durante a ditadura
           militar no Brasil, é um tema pouco discutido, muito menos abordado na
           grande.
         </p>
-      </div>
-      <div class="grid grid-cols-3 bg-lightblue ">
-        <div>
-          <img  class="max-h-[500px]" src="{% static 'media/InimigoSemFace.png' %}"  width="100%"  />
-        </div>
-        <div>
-          <img class="max-h-[500px]" src="{% static 'media/InimigoSemFace.png' %}"  width="100%" />
-        </div>
-        <div>
-          <img  class="max-h-[500px]" src="{% static 'media/revista_meio.png' %}"  width="100%"  />
-        </div>
-      </div>
     </div>
   </div>
+  <div class="bg-darkblue w-400 flex flex-col items-center justify-center py-24">
+    <img src="{% static 'media/paleta5.png' %}" class=" w-300" alt="paleta de imagens" />
+  </div>
+  <div class="grid w-400 grid-cols-3 gap-6 p-12 bg-lightblue ">
+    <div>
+      <img  class="max-h-[600px]" src="{% static 'media/InimigoSemFace.png' %}"  width="100%"  />
+    </div>
+    <div>
+      <img class="max-h-[600px]" src="{% static 'media/InimigoSemFace.png' %}"  width="100%" />
+    </div>
+    <div>
+      <img  class="max-h-[600px]" src="{% static 'media/revista_meio.png' %}"  width="100%"  />
+    </div>
+  
 </div>
+
+<script>
+ const swiper = new Swiper(".mySwiper", {
+    slidesPerView: 1.5, // Em telas menores
+    centeredSlides: true,
+    initialSlide: 1,
+    loop: true,
+    spaceBetween: -20, // Efeito de sobreposição
+    navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+    },
+    breakpoints: {
+        1024: {
+            slidesPerView: 3,
+            spaceBetween: -60, // Aumenta sobreposição no Desktop
+        }
+    },
+    on: {
+        init: function () {
+            updateText(this);
+        },
+        slideChange: function () {
+            updateText(this);
+        },
+    },
+});
+
+function updateText(swiperInstance) {
+    const activeSlide = swiperInstance.slides[swiperInstance.activeIndex];
+    const title = activeSlide.getAttribute('data-title');
+    const desc = activeSlide.getAttribute('data-description');
+
+    const titleEl = document.getElementById('carousel-title');
+    const descEl = document.getElementById('carousel-desc');
+    const boxEl = document.getElementById('text-box');
+
+    if (titleEl && descEl) {
+        boxEl.style.opacity = 0;
+        setTimeout(() => {
+            titleEl.innerText = title || "Projeto";
+            descEl.innerText = desc || "Descrição não disponível";
+            boxEl.style.opacity = 1;
+        }, 300);
+    }
+}
+</script>
 {% endblock content %}

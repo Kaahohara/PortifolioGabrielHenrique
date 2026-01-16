@@ -1,3 +1,30 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+@import "tailwindcss";
+@source "appGabrielPortifolio/templates/**/*.html";
+@source "appGabrielPortifolio/static/**/*.html";
+@source "appGabrielPortifolio/**/*.js";
+
+/* 2. CONFIGURAÇÃO DE TEMA */
+@theme {
+  /* Cores */
+  --color-darkblue: #013A40;
+  --color-buttonblue: #56868b;
+  --color-primary: #b3d1d4e8;
+  --color-lightblue: #C5D7D9;
+
+  /* Imagens de Fundo */
+  --background-image-blue-background: url('/static/media/FundoBluee.png');
+  --background-image-banner: url('/static/media/banner.png');
+  --background-image-noticiamateria: url('/static/media/noticiamateria.png');
+  --background-image-img-alfabeto: url('/static/media/alfabeto.jpeg');
+
+  /* Animação */
+@keyframes float {
+    0%, 100% { transform: translateY(0px) scale(1.1); }
+    50% { transform: translateY(-10px) scale(1.1); }
+  }
+  --animate-float: float 3s ease-in-out infinite;
+}
+
+.item-active {
+  @apply scale-110 opacity-100 z-20 animate-float;
+}

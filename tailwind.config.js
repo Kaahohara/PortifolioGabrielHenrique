@@ -15,6 +15,7 @@ module.exports = {
       },
       backgroundImage: {
         'blueBackground': "url('/static/media/FundoBluee.png')",
+        'banner': "url('/static/media/banner.png')",
         'noticiamateria': "url('/static/media/noticiamateria.png')",
         'imgAlfabeto': "url('/static/media/alfabeto.jpeg')",
       },

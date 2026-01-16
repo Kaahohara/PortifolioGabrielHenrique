@@ -2,107 +2,136 @@
 {% load static %}    
 {% include 'components/menu.html' %}
 {% block content %}
-<link rel="stylesheet" href="{% static 'css/styles.css' %}">
-<div class="bg-darkblue">
-    <div class="bg-primary  pt-24 pb-36">        
-        <div class="w-full gap-4 flex justify-center">
-            <div class="shadow-2xl p-14 rounded-br-full m-auto rounded-tr-full lg:w-5/6  justify-start ">
-                <p class="text-4xl pr-14">Eu sou <b>Gabriel Henrique</b><br>
-                estudante de <b>Jornalismo</b> e <b>Copy Writter</b></p>
-                <p class="text-2xl text-justify pr-14">Busco oportunidades de emprego ou estágio na área de comunicação, onde eu possa utilizar minhas habilidades de edição e produção de texto, criatividade e conhecimentos para contribuir com a elaboração e criação de conteúdos multimídia.</p>
-                <div class="flex mt-8 text-2xl">
-                    <button class="bg-buttonblue p-2 shadow-2xl rounded text-white">Saiba Mais</button>
-                    <button class="bg-buttonblue p-2 shadow-2xl ml-4 rounded text-white">Portifólio</button>
-                    
-                    <a>
-                        <img class="ml-4 size-9" src="{% static 'media/linkedin.png' %}" alt="linkedin"> 
-                    </a>
 
-                    <a>
-                        <img class="ml-4 size-9" src="{% static 'media/instagram.png' %}" alt="Instagram"> 
-                    </a>
+<div class="bg-darkblue w-full flex flex-col items-center justify-center">
+    <div class="w-400 bg-primary min-h-200">
+        <div class="m-auto pt-24 pb-36">        
+            <div class="w-full gap-4 flex justify-center items-center">
+                <div class="shadow-2xl p-24 rounded-br-full m-auto rounded-tr-full lg:w-5/6 justify-start ">
+                    <p class="text-4xl pr-14">Eu sou <b>Gabriel Henrique</b><br>
+                    estudante de <b>Jornalismo</b> e <b>Copy Writter.</b></p>
+                    <p class="text-2xl text-justify pr-14">Busco oportunidades de emprego ou estágio na área de comunicação, onde eu possa utilizar minhas habilidades de edição e produção de texto, criatividade e conhecimentos para contribuir com a elaboração e criação de conteúdos multimídia.</p>
+                    <div class="flex mt-8 text-2xl">
+                        <button class="bg-buttonblue p-2 shadow-2xl rounded text-white">Saiba Mais</button>
+                        <button class="bg-buttonblue p-2 shadow-2xl ml-4 rounded text-white">Portifólio</button>
+                        
+                        <!-- <a>
+                            <img class="ml-4 size-9" src="{% static 'media/linkedin.png' %}" alt="linkedin"> 
+                        </a>
+
+                        <a>
+                            <img class="ml-4 size-9" src="{% static 'media/instagram.png' %}" alt="Instagram"> 
+                        </a> -->
+                    </div>
+                </div>
+                <div class="lg:w-1/2 hidden rounded-full  lg:flex pr-14 justify-end">
+                    <img src="{% static 'media/fotoPerfil.png' %}" class="h-96  rounded-full w-auto" alt="perfil">
                 </div>
             </div>
-            <div class="lg:w-1/2 hidden rounded-full  lg:flex pr-14 justify-end">
-                <img src="{% static 'media/fotoPerfil.png' %}" class="h-96  rounded-full w-auto" alt="perfil">
+        </div>
+    </div>  
+    <div class="relative w-400 h-64"> 
+        <div class="grid grid-cols-1 md:grid-cols-3 absolute left-1/2 -translate-y-1/2 -translate-x-1/2 w-full px-4 md:px-16 gap-4 lg:gap-6">
+            <div class="bg-lightblue w-full shadow-2xl p-8 rounded-xl h-full border border-gray-100">
+                <h3 class="text-3xl font-bold mb-4">Soft Skills</h3>
+                <ul class="pl-4 space-y-2 text-gray-600">
+                    <li>Boa conversação</li>
+                    <li>Pensamento crítico</li>
+                    <li>Criatividade</li>
+                </ul>
+            </div>
+
+            <div class="bg-lightblue shadow-2xl p-8 rounded-xl h-full border border-gray-100">
+                <h3 class="text-3xl font-bold mb-4">Hard Skills</h3>
+                <ul class="pl-4 space-y-2 text-gray-600">
+                    <li>Produção audiovisual</li>
+                    <li>SEO</li>
+                    <li>Copywriter</li>
+                </ul>
+            </div>
+
+            <div class="bg-lightblue shadow-2xl p-8 rounded-xl h-full border border-gray-100">
+                <h3 class="text-3xl font-bold mb-4">Educação</h3>
+                <ul class="pl-4 space-y-2 text-gray-600">
+                    <li>Produção audiovisual</li>
+                    <li>SEO</li>
+                    <li>Copywriter</li>
+                </ul>
             </div>
         </div>
     </div>
 
 
-    <div class="grid lg:grid-cols-3  md:grid-cols-3 min-h-48 ml-4 mr-4 lg:ml-16 lg:mr-16 md:ml-4 md:mr-4 gap-4 lg:gap-6 -mt-14 sm:grid-cols-1  ">
-        <div class="bg-lightblue shadow-2xl  p-4 rounded-xl">
-            <p class="text-3xl">Soft Skills</p>
-            <div class="pl-4">
-                <p class="text-xl">Boa conversação</p>
-                <p class="text-xl">Pensamento crítico</p>
-                <p class="text-xl">Criatividade</p>
-            </div>
-        </div>
-        <div class="bg-lightblue shadow-2xl p-4 rounded-xl">
-            <p class="text-3xl">Hard Skills</p>
-            <div class="pl-4">
-                <p class="text-xl">Produção audiovisual</p>
-                <p class="text-xl">SEO</p>
-                <p class="text-xl">Copywriter</p>
-            </div>
-        </div>
-        <div class="bg-lightblue shadow-2xl p-4 rounded-xl">
-            <div class="pl-4">
-                <p class="text-3xl">Educação</p>
-                <p class="text-xl">Produção audiovisual</p>
-                <p class="text-xl">SEO</p>
-                <p class="text-xl">Copywriter</p>
-            </div>
-    </div>
-    </div>
-    <div class="bg-blueBackground shadow-2xl pl-4 pr-4  pb-36 pt-32 -mt-20 h-auto sm:w-full  bg-cover bg-center" >
-        <div class="bg-primary  m-auto sm:w-full lg:w-11/12  drop-shadow-6xl  opacity-75 rounded-xl p-16">
-            <div class="">
-                <p class="text-4xl">Formação</p>
-                <p class="text-2xl">Graduando em Jornalismo - Universidade Federal de Santa Maria<br>
-                    Técnico em enfermagem - CEPHAS</p>
-            </div>    
-            <div class="mt-12">
-                    <p class="text-4xl">Cursos</p>
-                    <p class="text-2xl "> Copywriting: Domine a arte da escrita persuasiva </p>
-            </div>    
-            <div class="mt-12">
-                        <p clAass="text-4xl">Experiência</p>
+    <div class="bg-blueBackground w-full flex flex-col items-center justify-center -mt-20 bg-no-repeat bg-cover">
+        <div class="w-400 flex flex-col items-center justify-center">
+            <div class="shadow-2xl pb-36 h-auto sm:w-full flex flex-col items-center justify-center" >
+                <div class="bg-primary m-auto sm:w-full lg:w-11/12  drop-shadow-6xl  opacity-75 rounded-xl p-16">
+                    <div class="flex flex-col gap-4">
+                        <p class="text-4xl">Formação</p>
+                        <p class="text-2xl">Graduando em Jornalismo - Universidade Federal de Santa Maria<br>
+                            Técnico em enfermagem - CEPHAS</p>
+                    </div>    
+                    <div class="mt-12 flex flex-col gap-4">
+                        <p class="text-4xl">Cursos</p>
+                        <p class="text-2xl "> Copywriting: Domine a arte da escrita persuasiva </p>
+                    </div>    
+                    <div class="mt-12 flex flex-col gap-4">
+                        <p class="text-4xl">Experiência</p>
                         <p class="text-2xl">Dom Média - Copywriter</p>                           
-            </div>    
-                        <p class="text-4xl mt-12">Ferramentas</p>
-                       
-            <div class="flex mt-12 pr-20 pl-20 lg:gap-8">
-                            <div class="">
-                                <img src="{% static 'media/figmaIcon.png' %}" alt="Figma">
-                            </div>
-                            <div class="">
-                                <img src="{% static 'media/CanvaIcon.png' %}" alt="Canva">
-                            </div>
-                            <div class="">
-                                <img src="{% static 'media/WordIcon.png' %}" alt="Word">
-                            </div>
-                            <div class="">
-                                <img src="{% static 'media/VegasIcon.png' %}" alt="Vegas">
-                            </div>
-                            <div class="">
-                                <img src="{% static 'media/ReaperIcon.png' %}" alt="Reaper">
-                            </div>
-                            <div class="">
-                                <img src="{% static 'media/capcutIcon.png' %}" alt="Capcut">
-                            </div>
-                            <div class="">
-                                <img src="{% static 'media/photoshopIcon.png' %}" alt="PhotoShop">
-                            </div> 
-
+                    </div>   
+                    <div class="mt-12 flex flex-col py-4">
+                        <p class="text-4xl">Ferramentas</p>
                     </div>
+                    <div class="grid-cols-4 grid mt-12 lg:gap-8">
+                        <div class="bg-lightblue flex flex-col items-center justify-center rounded-2xl px-8 py-14">
+                            <img src="{% static 'media/figmaIcon.png' %}" alt="Figma">
+                        </div>
+                        <div class="bg-lightblue flex flex-col items-center justify-center rounded-2xl px-8 py-10">
+                            <img src="{% static 'media/CanvaIcon.png' %}" alt="Canva">
+                        </div>
+                        <div class="bg-lightblue flex flex-col items-center justify-center rounded-2xl px-8 py-10">
+                            <img src="{% static 'media/WordIcon.png' %}" alt="Word">
+                        </div>
+                        <div class="bg-lightblue flex flex-col items-center justify-center rounded-2xl px-8 py-10">
+                            <img src="{% static 'media/VegasIcon.png' %}" alt="Vegas">
+                        </div>
+                        <div class="bg-lightblue flex flex-col items-center justify-center rounded-2xl px-8 py-10">
+                            <img src="{% static 'media/ReaperIcon.png' %}" alt="Reaper">
+                        </div>
+                        <div class="bg-lightblue flex flex-col items-center justify-center rounded-2xl px-8 py-10">
+                            <img src="{% static 'media/capcutIcon.png' %}" alt="Capcut">
+                        </div>
+                        <div class="bg-lightblue flex flex-col items-center justify-center rounded-2xl px-8 py-10">
+                            <img src="{% static 'media/photoshopIcon.png' %}" alt="PhotoShop">
+                        </div> 
                     </div>
-                    <div class="mt-24 text-center text-xl text-white">Made by Karina Ohara</div>
                 </div>
+          
+        
+                <p class="text-4xl text-white mt-12 py-12">Habilidades</p>
+                <div class="grid-cols-4 grid mt-12 lg:gap-8">
+                    <div class="bg-lightblue flex flex-col items-center justify-center min-h-88 min-w-88 rounded-2xl px-8 py-10">
+                    </div>
+                    <div class="bg-lightblue flex flex-col items-center justify-center min-h-88 min-w-88 rounded-2xl px-8 py-10">
+                    </div>
+                    <div class="bg-lightblue flex flex-col items-center justify-center min-h-88 min-w-88 rounded-2xl px-8 py-10">
+                    </div>
+                    <div class="bg-lightblue flex flex-col items-center justify-center min-h-88 min-w-88 rounded-2xl px-8 py-10">
+                    </div>
+                    <div class="bg-lightblue flex flex-col items-center justify-center min-h-88 min-w-88 rounded-2xl px-8 py-10">
+                    </div>
+                    <div class="bg-lightblue flex flex-col items-center justify-center min-h-88 min-w-88 rounded-2xl px-8 py-10">
+                    </div>
+                    <div class="bg-lightblue flex flex-col items-center justify-center min-h-88 min-w-88 rounded-2xl px-8 py-10">
+                    </div>
+                    <div class="bg-lightblue flex flex-col items-center justify-center min-h-88 min-w-88 rounded-2xl px-8 py-10">
+                    </div>
+                </div>
+                <div class="py-26 text-center text-xl text-white">Made by Karina Ohara</div>
             </div>
         </div>
-
+    </div>
+</div>
 
 
 {% endblock content %}

@@ -6,19 +6,18 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolio</title>
     <link rel="stylesheet" href="{% static 'css/estilops.css' %}">
-    <link href="{% static 'css/output.css' %}" rel="stylesheet">
-
+    <link rel="stylesheet" href="{% static 'css/output.css' %}?v=1.9">
 </head>
 <body>
-<nav class="bg-darkblue p-2 flex items-center">
+<nav class="bg-darkblue p-4 flex justify-between items-center">
 
     <a href="{% url 'index' %}" class="mr-4">
         <img class="w-8" src="{% static 'media/pen.png' %}" alt="pen">
     </a>
     
-    <ul class="flex text-lg text-white font-serif ml-auto">
+    <ul class="flex gap-12  text-lg text-white font-serif ml-auto">
         <li class="mr-6"><a href="{% url 'index' %}">Sobre</a></li>
-        <li class="mr-6"><a href="{% url 'portifolio' id=1 %}">Portifólio</a></li>
+        <!-- <li class="mr-6"><a href="{% url 'portifolio' id=1 %}">Portifólio</a></li> -->
         <li><a href="{% url 'production' %}">Produções Literárias</a></li>
     </ul>
 </nav>
