@@ -14,7 +14,7 @@
             <h2 class="text-3xl font-black tracking-tighter hover:skew-x-12 transition-transform cursor-default">
                 Gabriel<span class="text-buttonblue"> Silva</span>
             </h2>
-            <p class="text-gray-400 max-w-sm">
+            <p class="text-gray-400 max-w-sm">Escritor e Jornalista 
             </p>
             </div>
 
@@ -37,7 +37,7 @@
                 💻
                 </a>
             </div>
-            <p class="mt-6 text-sm text-gray-500">© 2026 Santa Maria, RS</p>
+            <p class="mt-6 text-sm text-gray-500">© 2026 SP</p>
             </div>
         </div>
 

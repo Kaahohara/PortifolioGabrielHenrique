@@ -42,9 +42,9 @@ const informacoesCV = {
 
     <main class="bg-darkblue w-full flex flex-col items-center justify-center font-sans">
       <Banner :img="fotoPerfil" name="John Doe" description="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud "/>
-
+        
       <div class="relative py-12 max-w-full w-full lg:h-64">
-        <div class="grid grid-cols-1 text-left w-full lg:grid-cols-3 lg:absolute lg:left-1/2 lg:-translate-y-full top-1/2 lg:-translate-x-1/2 px-4 md:px-16 gap-6">
+        <div class="grid grid-cols-1 text-left w-full lg:grid-cols-3 lg:absolute lg:left-1/2 lg:-translate-y-1/2 lg:-translate-x-1/2 px-4 md:px-16 gap-6">
           <ServiceCard title="Lorem ipsum dolor sit amet" icon="feather">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud 
           </ServiceCard>

@@ -29,7 +29,7 @@ const abaAtiva = ref('formacao')
           :style="{ backgroundColor: abaAtiva === chave ? conteudo.color : '#5a7d7d' }"
         >
           <font-awesome-icon :icon="conteudo.icon" />
-          <span class="text-2xl lg:text-5xl">{{ conteudo.label }}</span>
+          <span class="text-1xl lg:text-2xl">{{ conteudo.label }}</span>
           
           <div v-if="abaAtiva === chave" class="absolute bottom-0 -right-4 w-4 h-4"
                :style="{ boxShadow: `-4px 0 0 0 ${conteudo.color}`, borderRadius: '0 0 0 12px' }"></div>
@@ -39,11 +39,11 @@ const abaAtiva = ref('formacao')
       <div class="w-full rounded-b-3xl rounded-tr-3xl p-8 lg:p-16 shadow-2xl relative z-20"
            :style="{ backgroundColor: secoes[abaAtiva].color }">
         
-        <h2 class="text-4xl lg:text-6xl font-bold mb-4">{{ secoes[abaAtiva].titulo }}</h2>
-        <p class="text-xl lg:text-3xl mb-8">{{ secoes[abaAtiva].desc }}</p>
+        <h2 class="text-2xl lg:text-1xl font-bold mb-4">{{ secoes[abaAtiva].titulo }}</h2>
+        <p class="text-xl lg:text-1xl mb-8">{{ secoes[abaAtiva].desc }}</p>
 
-        <div class="grid grid-cols-2 md:grid-cols-4 gap-4">
-          <div v-for="(img, name) in secoes[abaAtiva].icons" :key="name" class="p-4 bg-white/20 rounded-xl">
+        <div class="grid grid-cols-2 md:grid-cols-4 gap-6">
+          <div v-for="(img, name) in secoes[abaAtiva].icons" :key="name" class="p-4 transition-transform duration-300 hover:scale-110 bg-white/20 rounded-xl">
              <img :src="img" :alt="name" class="h-16 mx-auto" />
           </div>
         </div>
