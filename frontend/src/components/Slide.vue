@@ -1,8 +1,8 @@
 <template>
-    <div class="swiper-slide transition-all duration-500 scale-70 opacity-40 [.swiper-slide-active]:scale-90 [.swiper-slide-active]:opacity-100 [.swiper-slide-active]:z-20" 
-                    :data-title="title"  
-                    :data-description="description">
-            <img :src="img" class="rounded-3xl shadow-2xl w-full max-w-[600] mx-auto" />
+    <div class="swiper-slide transition-all duration-500 scale-80 opacity-40 [.swiper-slide-active]:scale-90 [.swiper-slide-active]:opacity-100 [.swiper-slide-active]:z-20" 
+        :data-title="title"  
+        :data-description="description">
+        <img :src="img" class="rounded-3xl shadow-2xl w-full max-w-[600px] max-h-[800px] mx-auto" />
     </div>
 </template>
 <script setup>

@@ -3,17 +3,17 @@
 </script>
 
 <template>
-  <nav class="bg-darkblue w-full p-4 md:px-8 flex justify-between items-center shadow-2xl relative z-50">
+  <nav class="bg-darkblue w-full py-2 md:px-8 flex justify-between items-center shadow-2xl relative z-50">
     
     <router-link to="/" class="flex items-center transition-transform hover:scale-110 active:scale-95">
-      <img class="w-18 h-auto object-contain" :src="penLogo" alt="pen">
+      <img class="w-12 h-auto object-contain" :src="penLogo" alt="pen">
     </router-link>
     
-    <ul class="flex items-center text-4xl gap-6 md:gap-12 text-white list-none m-0 p-4">
+    <ul class="flex items-center text-4xl gap-6 md:gap-12 text-white list-none m-0 p-2">
       <li class="relative group">
         <router-link 
           to="/" 
-          class="text-base lg:text-3xl font-medium transition-colors "
+          class="text-base lg:text-xl font-medium transition-colors "
           active-class="text-buttonblue font-bold"
         >
           Sobre
@@ -24,7 +24,7 @@
       <li class="relative group">
         <router-link 
           to="/producoes" 
-          class="text-base md:text-3xl font-medium transition-colors "
+          class="text-base lg:text-xl font-medium transition-colors "
           active-class="text-buttonblue font-bold"
         >
           Produções Literárias

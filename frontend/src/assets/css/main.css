@@ -1,5 +1,6 @@
 @import "tailwindcss";
 
+@source "../../";
 @layer base {
   html, body {
     width: 100%;
@@ -12,7 +13,7 @@
     margin: 0;
     padding: 0;
   }
-}
+  }
 @theme {
   --color-darkblue: #013A40;
   --color-buttonblue: #56868b;
@@ -39,7 +40,34 @@
     100% { transform: translate(-1px, 2px) rotate(-1deg); }
   }
   
+@keyframes custom-bounce {
+  0%, 100% {
+    transform: translateY(-15%);
+    animation-timing-function: cubic-bezier(0.8, 0, 1, 1);
+  }
+  50% {
+    transform: translateY(0);
+    animation-timing-function: cubic-bezier(0, 0, 0.2, 1);
+  }
+}
 
+.animate-custom-bounce {
+  animation: custom-bounce 2s infinite; 
+}
+@keyframes slideInFromLeft {
+  0% {
+    transform: translateX(-100%);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+.animate-slide-left {
+  animation: slideInFromLeft 1s ease-out forwards;
+}
 .item-active {
   @apply scale-110 opacity-100 z-20 animate-float;
 }
