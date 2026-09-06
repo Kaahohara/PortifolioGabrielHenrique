@@ -7,9 +7,15 @@
             </div>
 
             <div class="w-full flex flex-col max-w-11/12 items-center justify-center mx-auto mt-8 md:-mt-14 relative z-30">
+<<<<<<< HEAD
                 <div class="w-full bg-lightblue min-h-65 py-8 px-6 rounded-3xl shadow-xl text-center transition-all duration-500 border border-white/20" id="text-box">
                     <h2 class="text-4xl font-bold text-darkblue mb-2 md:mb-4" id="carousel-title">Título do Projeto</h2>
                     <p class="text-2xl text-buttonblue leading-relaxed text-justify" id="carousel-desc">Descrição do projeto aparece aqui.</p>
+=======
+                <div class="w-full bg-lightblue min-h-[260px] py-8 px-6 rounded-3xl shadow-xl text-center transition-all duration-500 border border-white/20" id="text-box">
+                    <h2 class="text-2xl font-bold text-darkblue mb-2 md:mb-4" id="carousel-title">Título do Projeto</h2>
+                    <p class="text-1xl text-buttonblue leading-relaxed" id="carousel-desc">Descrição do projeto aparece aqui.</p>
+>>>>>>> f409b0837a134d8fdd7c74f55bc07821392fa5d9
                 </div>
             </div>
 

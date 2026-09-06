@@ -1,8 +1,8 @@
 <template>
     <button :class="[
-      'transition-colors py-3 px-4 lg:py-4 lg:px-6 shadow-2xl text-2xl rounded-xl text-black',
+      'transition-colors py-1 px-2 lg:py-2 lg:px-4 shadow-2xl text-lg rounded-lg text-black',
       `bg-${color}`, 
-      `hover:bg-${hoverColor}`, `${attrs}`
+       `${attrs}`
     ]">
     {{ text }}
     <font-awesome-icon :icon="icon" />
@@ -20,10 +20,7 @@
             type: String,
             default: "buttonblue"
         },
-        hoverColor: {
-            type: String,
-            default: "[#256969]"
-        },
+     
         attrs: String,
     })
 </script>

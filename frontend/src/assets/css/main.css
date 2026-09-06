@@ -1,13 +1,26 @@
-@import "tailwindcss";
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
 
 @source "../../";
 @layer base {
-  html, body {
-    width: 100%;
+  /* Força o navegador a considerar 1rem = 16px, ignorando zooms do sistema */
+  :root {
+    font-size: 16px !important; 
+    -webkit-text-size-adjust: 100%;
+    box-sizing: border-box;
+  }
+
+  /* Garante que o corpo do site não crie margens fantasmas */
+  body {
     margin: 0;
     padding: 0;
+    width: 100%;
+    min-height: 100vh;
     overflow-x: hidden;
+    line-height: 1.5; /* Altura de linha padrão para não esticar verticalmente */
   }
+<<<<<<< HEAD
   
   #app {
     margin: 0;
@@ -19,16 +32,15 @@
   --color-buttonblue: #56868b;
   --color-primary: #b3d1d4e8;
   --color-lightblue: #C5D7D9;
+=======
+>>>>>>> f409b0837a134d8fdd7c74f55bc07821392fa5d9
 
-  --background-image-blue-background: url('/src/assets/media/FundoBluee.png');
-  --background-image-banner: url('/src/assets/media/banner.png');
-  --background-image-noticiamateria: url('/src/assets/media/noticiamateria.png');
-  --background-image-img-alfabeto: url('/src/assets/media/alfabeto.jpeg');
-
-@keyframes float {
-    0%, 100% { transform: translateY(0px) scale(1.1); }
-    50% { transform: translateY(-10px) scale(1.1); }
+  /* Impede que imagens e elementos de bloco fiquem enormes */
+  img, svg, video, canvas, audio, iframe, embed, object {
+    display: block;
+    max-width: 100%;
   }
+<<<<<<< HEAD
   --animate-float: float 3s ease-in-out infinite;
 }
 @keyframes shake {
@@ -70,4 +82,6 @@
 }
 .item-active {
   @apply scale-110 opacity-100 z-20 animate-float;
+=======
+>>>>>>> f409b0837a134d8fdd7c74f55bc07821392fa5d9
 }

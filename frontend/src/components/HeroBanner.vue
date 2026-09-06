@@ -13,7 +13,7 @@
         {{ title }}
       </h1>
       
-      <div class="mt-4 w-24 h-1 bg-blue-500 mx-auto rounded-full shadow-lg"></div>
+      <div class="mt-4 w-24 h-1 bg-darkblue mx-auto rounded-full shadow-lg"></div>
     </div> 
   </section>
 </template>
