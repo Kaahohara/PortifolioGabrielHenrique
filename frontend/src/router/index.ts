@@ -5,12 +5,12 @@ import ProducoesView from '../views/ProducoesView.vue'
 
 const routes = [
   {
-    path: '/',
+    path: '/portifolioGabrielHenrique/',
     name: 'home',
     component: HomeView
   },
   {
-    path: '/producoes',
+    path: '/portifolioGabrielHenrique/producoes',
     name: 'producoes',
     component: ProducoesView
   }
