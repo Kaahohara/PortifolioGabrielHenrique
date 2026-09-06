@@ -2,7 +2,7 @@
     <div class="bg-lightblue/20 border border-white/10 min-h-32 rounded-2xl animate-pulse">
         <img :src="img" class="h-80 w-auto object-contain overflow-hidden mx-auto mt-8 opacity-50" />
         <div class="bg-lightblue p-8">
-            <p class="text-center font-bold text-2xl lg:text-4xl">{{ title }}</p>
+            <p class="text-center font-bold text-2xl lg:text-3xl">{{ title }}</p>
             <p class="text-center text-black lg:text-2xl text-lg mt-4">
                 <slot></slot>
             </p>

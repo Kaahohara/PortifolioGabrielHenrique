@@ -3,8 +3,8 @@
         <div class="flex items-start">
             <font-awesome-icon :icon="icon" class="text-buttonblue text-2xl mb-4" />
         </div>  
-        <h3 class="text-2xl font-bold mb-4 text-darkblue">{{ title }}</h3>
-        <ul class="space-y-2 text-gray-700 list-none list-disc text-xl lg:text-1xl">
+        <h3 class="text-3xl font-bold mb-4 text-darkblue">{{ title }}</h3>
+        <ul class="space-y-2 text-gray-700 list-none text-xl lg:text-2xl">
             <li><slot></slot></li>
         </ul>
     </div>       

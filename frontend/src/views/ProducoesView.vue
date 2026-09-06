@@ -101,12 +101,12 @@ function updateText(swiperInstance) {
       <section>
         <div class="flex items-center justify-center w-full">
           <div class="flex items-center flex-col gap-5 lg:w-1/2 p-10">
-            <p class="lg:text-6xl text-3xl font-bold">Lorem ipsum dolor sit amet</p>
-            <p class="text-xl lg:text-3xl">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+            <p class="lg:text-4xl text-3xl font-bold">Lorem ipsum dolor sit amet</p>
+            <p class="text-xl lg:text-2xl">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
           </div>
         </div>
         
-        <article name="cards" class="grid grid-cols-1 md:grid-cols-3 w-full h-full gap-4 items-center justify-center mt-20 mb-50 px-4">
+        <article name="cards" class="grid grid-cols-1 md:grid-cols-3 w-full h-full gap-4 items-center justify-center mt-20 my-10 px-4">
           <Gallery title="Lorem ipsum dolor sit amet" description="Ut enim ad minim veniam, quis nostrud Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud " :img="image5" />
           <Gallery title="Lorem ipsum dolor sit amet" description="Ut enim ad minim veniam, quis nostrud Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud " :img="image4" />
           <Gallery title="Lorem ipsum dolor sit amet" description="Ut enim ad minim veniam, quis nostrud Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud " :img="image6" />          
@@ -115,27 +115,24 @@ function updateText(swiperInstance) {
           <Gallery title="Lorem ipsum dolor sit amet" description="Ut enim ad minim veniam, quis nostrud Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud " :img="image7" />
         </article>
       </section>
-      <div class="w-full min-h-[360px] bg-white"></div>
-      <article name="cards" class="flex bg-lightblue max-w-full relative w-full flex-col items-center justify-center py-40">
-        <FloatingAvatarSection>
-          <TestimonialCard :img="image10">Ut enim ad minim veniam, quis nostrud Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud </TestimonialCard>
-          <TestimonialCard :img="image10">Ut enim ad minim veniam, quis nostrud Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud </TestimonialCard>
-          <TestimonialCard :img="image10">Ut enim ad minim veniam, quis nostrud Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud </TestimonialCard>
-        </FloatingAvatarSection> 
-      </article>
       <section class="w-full flex flex-col items-center justify-center">
         <QuoteSection quote='"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.""' />
       </section>
-      <div class="flex items-center justify-center">
+      <FloatingAvatarSection>
+          <TestimonialCard :img="image10">Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud </TestimonialCard>
+          <TestimonialCard :img="image10">Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud </TestimonialCard>
+          <TestimonialCard :img="image10">Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud </TestimonialCard>
+      </FloatingAvatarSection> 
+      <div class="flex items-center mt-20 justify-center">
         <article name="cards" class="grid w-11/12 lg:grid-cols-2 grid-cols-1 gap-8 px-6 lg:px-0 items-center justify-center py-20">
             <Splitcard :img="bonequinho2" title="Lorem ipsim dolor sit amet" description="Ut enim ad minim veniam, quis nostrud Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud ">
               <div class="flex justify-left px-8 pb-8">
-                <Button text="Saiba Mais" url="" color="buttonblue" hoverColor="[#256969]" icon="arrowRight" attrs="hover:bg-[#256969] rounded-xl lg:rounded-2xl" />
+                <Button text="Saiba Mais" url="" color="buttonblue" hoverColor="[#256969]" />
               </div>
             </Splitcard>
             <Splitcard :img="bonequinho2" title="Lorem ipsim dolor sit amet" description="Ut enim ad minim veniam, quis nostrud Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud ">
               <div class="flex justify-left px-8 pb-8">
-                  <Button text="Saiba Mais" url="" color="buttonblue" hoverColor="[#256969]" icon="arrowRight" attrs="hover:bg-[#256969] rounded-xl lg:rounded-2xl" />
+                <Button text="Saiba Mais" url="" color="buttonblue" hoverColor="[#256969]" />
               </div>
             </Splitcard>
         </article>

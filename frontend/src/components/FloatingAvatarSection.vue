@@ -1,9 +1,10 @@
 <template>
-    <div class="lg:absolute lg:top-0 lg:left-1/2 lg:-translate-x-1/2 lg:-translate-y-1/2 z-10 w-full grid grid-cols-1 lg:grid-cols-3 gap-10 px-6">
-        <slot></slot>
+  <div class="w-full bg-primary py-22 flex flex-col relative justify-center items-center">
+    <div class="w-full flex justify-between px-14 items-center absolute left-1/2 -translate-x-1/2 ">
+     <slot></slot>
     </div>
+  </div>
 </template>
-
 <script setup>
 defineProps({
     description: {

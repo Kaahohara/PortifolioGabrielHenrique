@@ -1,6 +1,6 @@
 <template>
-    <div class="bg-lightblue py-20  max-w-full w-full flex flex-col items-center justify-center">
-        <p class="lg:w-1/2 w-full text-black text-center text-xl lg:text-2xl">
+    <div class="bg-lightblue min-h-100 py-20 px-4 max-w-full w-full flex flex-col items-center justify-center">
+        <p class="lg:w-2/3 w-full text-slate-800 text-center text-lg lg:text-3xl font-medium leading-relaxed">
             {{ quote }}
         </p>
     </div>

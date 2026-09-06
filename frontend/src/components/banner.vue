@@ -1,6 +1,6 @@
 <template>
-    <div class="max-w-full bg-primary lg:min-h-250 w-full">
-        <div class="m-auto lg:pt-24 lg:pb-36">
+    <div class="max-w-full bg-primary lg:min-h-full w-full">
+        <div class="m-auto py-40">
             <div class="w-full gap-4 flex justify-center items-center flex-col lg:flex-row">
                 
                 <div class="shadow-2xl text-left lg:px-12 py-20 p-8 animate-slide-left lg:rounded-br-full m-auto lg:rounded-tr-full lg:w-1/2 justify-start">
@@ -12,7 +12,7 @@
                     {{ description }}
                 </p>
                 
-                <div class="flex flex-wrap gap-4 mt-8 text-xl lg:text-4xl">
+                <div class="flex flex-wrap gap-4 mt-8">
                     <Button text="Saiba Mais" url="" color="buttonblue" hoverColor="[#256969]" />
                     <Button text="Portifólio" url="" color="buttonblue" hoverColor="[#256969]" />
                 </div>
